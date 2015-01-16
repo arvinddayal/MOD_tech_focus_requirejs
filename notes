@@ -1,11 +1,5 @@
--RequireJS uses Asynchronous Module Loading (AMD) for loading files.  requirejs.config function allows to create dependency and load order
 
--RequireJS is a well known JavaScript module and file loader which is supported in the latest versions of popular browsers. 
-	-IE 6+
-	-Firefox 2+
-	-Safari 3.2+
-	-Chrome 3+
-	-Opera 10+
+
 
 -dont need ".js", Require assumes everything is a JS file
 
@@ -14,14 +8,14 @@
 -As of jQuery 1.7, it comes with support for AMD as it implements the AMD spec, so we can use it. You can see this right at the bottom of the un-minified source:
 
 cons
--have to rewrite scripts with require/define statements
+-multiple HTTP requests for each file.  Unminified/uglified (optimizer)
+-have to scripts with require/define statements
+-have to wrap all code in anonymous functions, on all files/modules
+-learning curve for developers and maintenance
 
 pros
+-modular approach to app development/script management, smaller chunks of code to manage and debug
+-can see exact dependencies at top of app/module
+-performance, only load what's needed
+-ability to load nested dependencies
 -solid community and support
--RequireJS waits until all the dependent modules are loaded before executing the functionality. If any modules are missing, it doesn’t execute any code.
-
-
-
-
-http://www.sitepoint.com/understanding-requirejs-for-effective-javascript-module-loading/
-https://egghead.io/lessons/requirejs-introduction-to-requirejs

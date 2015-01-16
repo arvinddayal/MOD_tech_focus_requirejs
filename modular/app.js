@@ -8,6 +8,7 @@ require.config({
 // 	console.log($);
 // });
 
-require(['content/modules/template'], function(template) {
-  template.showName("MOD");
+require(['content/modules/template'], function(GoBuckeyes) {
+	GoBuckeyes.showName("MOD");
 });
+
