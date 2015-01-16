@@ -1,7 +1,7 @@
 // require(["alerter"], function (alerter) {
-// 	alerter("howdie");
+// 	alerter.alerter("howdie");
+// 	alerter.console("hi");
 // });
 
 require(["app"], function (app) {
-
 });

@@ -4,7 +4,7 @@ define(function (require) {
 	button.onclick = function(){
 		
 		var alerter = require(["alerter"], function (alerter) {
-			alerter("hello via on demand load");
+			alerter.alerter("hello via on demand load");
 		});
 
 	};
@@ -15,5 +15,6 @@ define(function (require) {
 });
 
 // require(["alerter"], function (alerter) {
-// 	alerter("hello from app");
+// 	alerter.alerter("hello from app");
+// 	alerter.console("hello from app");
 // });

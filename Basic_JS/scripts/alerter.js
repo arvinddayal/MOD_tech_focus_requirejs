@@ -1,5 +1,10 @@
-define(function (argument) {
-	return function (message) {
-		alert(message);
+define(function () {
+	return {
+		alerter: function (message) {
+			alert(message);
+		},
+		console: function (message) {
+			console.log(message);
+		}
 	};
 });
